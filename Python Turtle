@@ -41,7 +41,9 @@ for i in range(60):
             mark.backward(205*SCALE)      
       mark.right(6)
 
+      
 
+""""mllkkmllkk""""
 update = True #controls whether minute and hour hand should update (once per minute)
 updateSecond = True # controls whether the second hanbd should update
 while True: 
