@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
-binary=False                    # set this to True or False
+binary=False                    # set this to type Boleyn(True or False) 
 lonum,hinum=1,128               # range for the number
 
-import random as r
+import random as r              
 
 the_num=r.randint(lonum,hinum)  # computer chooses a number randomly
 print("I'm thinking of a number between",lonum,"and",hinum)
@@ -26,7 +26,7 @@ for i in range(lonum,hinum):    # repeat this until guess is correct:
     elif guess < the_num:
         print("Higher!")
         lo=guess                        # push up the lower bound
-    else: break                     # yay!
+    else: break                     #
 
 print("That took",guesses,"guesses")
 #print("That took {0} guesses".format(guesses)) # alternative to previous line 
