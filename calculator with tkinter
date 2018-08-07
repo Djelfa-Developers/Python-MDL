@@ -1,0 +1,53 @@
+#!/usr/bin.python
+#python2
+#scripted by said113
+
+from tkinter import *
+
+def SetOnClickLisner(numbers):
+    global opreaters
+    opreaters=opreaters+str(numbers)
+    text.set(opreaters)
+    
+def InputClear():
+    global opreaters    
+    opreaters=""
+    text.set("")    
+    
+def Equals():
+    global opreaters   
+    eql=str(eval(opreaters))
+    text.set(eql)      
+    opreaters=""
+    
+
+root=Tk()
+root.title("calculator")
+text=StringVar()
+opreaters=""
+
+edt=Entry(root,font=("arial",14,"bold"),textvariable=text,bd=12,bg="#999",insertwidth=4,justify="right").grid(columnspan=6,sticky=S+W+E+N)
+
+
+btn=Button(root,font=("arial",12,"bold"),text="1",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner(1)).grid(row=1,column=0,sticky=W)
+btn=Button(root,font=("arial",12,"bold"),text="2",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner(2)).grid(row=1,column=1,sticky=W+E)
+btn=Button(root,font=("arial",12,"bold"),text="3",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner(3)).grid(row=1,column=2,sticky=E)
+
+btn=Button(root,font=("arial",12,"bold"),text="4",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner(4)).grid(row=2,column=0,sticky=W)
+btn=Button(root,font=("arial",12,"bold"),text="5",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner(5)).grid(row=2,column=1,sticky=W+E)
+btn=Button(root,font=("arial",12,"bold"),text="6",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner(6)).grid(row=2,column=2,sticky=E)
+
+btn=Button(root,font=("arial",12,"bold"),text="7",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner(7)).grid(row=3,column=0,sticky=W)
+btn=Button(root,font=("arial",12,"bold"),text="8",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner(8)).grid(row=3,column=1,sticky=W+E)
+btn=Button(root,font=("arial",12,"bold"),text="9",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner(9)).grid(row=3,column=2,sticky=E)
+btn=Button(root,font=("arial",12,"bold"),text="0",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner("0")).grid(row=4,column=1,sticky=W+E)
+
+btn=Button(root,font=("arial",12,"bold"),text="+",bd=5,padx=40,pady=8,command=lambda:SetOnClickLisner("+")).grid(row=4,column=0,sticky=W)
+btn=Button(root,font=("arial",12,"bold"),text="-",bd=5,padx=42,pady=8,command=lambda:SetOnClickLisner("-")).grid(row=4,column=2,sticky=W+S+E+N)
+btn=Button(root,font=("arial",12,"bold"),text="/",bd=5,padx=42,pady=8,command=lambda:SetOnClickLisner("/")).grid(row=5,column=0,sticky=W)
+btn=Button(root,font=("arial",12,"bold"),text="*",bd=5,padx=42,pady=8,command=lambda:SetOnClickLisner("*")).grid(row=5,column=2,sticky=E)
+btn=Button(root,font=("arial",12,"bold"),text="=",bd=5,padx=42,pady=8,command=lambda:Equals()).grid(row=6,column=1)
+
+btn=Button(root,font=("arial",12,"bold"),text="Clear",bd=5,padx=25,pady=8,command=lambda:InputClear()).grid(row=5,column=1,sticky=W+E)
+
+root.mainloop()
