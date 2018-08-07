@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+from tkinter import *
+import sqlite3
+from tkinter.messagebox import *
+
+def login():
+    cursor.execute('SELECT * FROM user WHERE email = ? AND password = ?',(get_email,get_password))
+
+    if cursor.fetchall():
+        showinfo(title="You are Welcome", message="hello")
+    else:
+        showerror(title="Your login failed", message="you are not coorect")
+
+root=Tk()
+
+get1=StringVar()
+get2=StringVar()
+
+edt=Label(root,text="Enter your Email").grid(row=0,column=0,padx=4,pady=4,sticky=W)
+edt1=Label(root,text="Enter your Password").grid(row=1,column=0,padx=4,pady=4,sticky=W)
+email=Entry(root,bd=3,width=20,textvariable=get1).grid(row=0,column=1,padx=4,pady=4)
+password=Entry(root,bd=3,width=20,show="*",textvariable=get2).grid(row=1,column=1,padx=4,pady=4)
+
+btn=Button(root,text="Login",bd=3,width=6,command=login).grid(row=2,column=1,sticky=E,padx=4,pady=4)
+btn=Button(root,text="Sign in",bd=3).grid(row=2,column=1,sticky=W,padx=27,pady=4)
+
+get_email=get1.get()
+get_password=get2.get()
+with sqlite3.connect("users.db") as db:
+    cursor = db.cursor()
+cursor.execute("create table if not exists user(email text not null,password int not null)")
+cursor.execute("insert into user(email,password) values(?,?)",(get_email,get_password))
+db.commit()
+
+root.mainloop()
