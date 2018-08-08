@@ -11,10 +11,13 @@ submenu.add_command(label="Close")
 
 #just make separator between the labels
 submenu.add_separator()
+
 submenu.add_command(label="Sava")
 submenu.add_command(label="Sava As")
 
 #just make separator between the labels
+submenu.add_separator()
+
 submenu.add_command(label="Page Setup")
 submenu.add_command(label="Quit")
 
