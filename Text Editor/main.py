@@ -21,4 +21,6 @@ first.add_separator()
 first.add_command(label="Page Setup")
 first.add_command(label="Quit")
 
+#-------   make second menu ---------
+
 root.mainloop()
