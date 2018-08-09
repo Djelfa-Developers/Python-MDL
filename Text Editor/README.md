@@ -1,16 +1,16 @@
 # Tkinter and Turtle Editor
-  this is first tkinter and turtle editor  
+    this is first tkinter and turtle editor  
 ### Getting Started
-  These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+    These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Prerequisites
-  Python 3. and abouve 
+    Python 3. and abouve 
 ### Installing
-  .........
+    .........
 ### Deployment
-  Python 3 
+    Python 3 
 ### Author
-  Said Gourida 
+    Said Gourida 
 ### License
-  This project is licensed under the GPL License 
+    This project is licensed under the GPL License 
 ### Acknowledgments
-  Python libraries (Tkinter - Turtle)
+    Python libraries (Tkinter - Turtle)
