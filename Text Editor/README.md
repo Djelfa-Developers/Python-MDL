@@ -11,6 +11,6 @@
 ### Author
     Said Gourida 
 ### License
-    This project is licensed under the GPL License 
+    This project is licensed under MIT License 
 ### Acknowledgments
     Python libraries (Tkinter - Turtle)
