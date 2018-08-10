@@ -50,7 +50,10 @@ third=Menu(menu,tearoff=0)
 menu.add_cascade(label="Project",menu=third)
 third.add_command(label="New Project...")
 third.add_command(label="Open Project...")
-third.add_command(label="Recent")
+
+select_menu1=Menu(third,tearoff=0)
+third.add_cascade(label="Recent",menu=select_menu1)
+select_menu1.add_command(label="Default Project")
 
 third.add_command(label="Add New File")
 third.add_command(label="Add Existing File")
