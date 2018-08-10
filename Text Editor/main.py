@@ -43,10 +43,10 @@ select_menu.add_command(label="Select All",accelerator="Ctrl+A")
 select_menu.add_command(label="Select More",accelerator="Ctrl+Up")
 select_menu.add_command(label="Select Less",accelerator="Ctrl+Down")
 
-ser_rep=Menu(menu,tearoff=0)
-menu.add_cascade(label="Search and replace",menu=third)
-second.add_command(label="Search",accelerator="Ctrl+F")
-second.add_command(label="Replace",accelerator="Ctrl+H")
+ser_rep=Menu(second,tearoff=0)
+menu.add_cascade(label="Search and replace",menu=ser_rep)
+ser_rep.add_command(label="Search",accelerator="Ctrl+F")
+ser_rep.add_command(label="Replace",accelerator="Ctrl+H")
 second.add_command(label="Goto Line...")
 
 #-------   make third menu   ---------
