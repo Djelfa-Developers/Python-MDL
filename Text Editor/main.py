@@ -45,4 +45,21 @@ select_menu.add_command(label="Select Less")
 second.add_command(label="Search and replace")
 second.add_command(label="Goto Line...")
 
+#-------   make third menu   ---------
+third=Menu(menu,tearoff=0)
+menu.add_cascade(label="Project",menu=third)
+third.add_command(label="New Project...")
+third.add_command(label="Open Project...")
+third.add_command(label="Recent")
+
+third.add_command(label="Add New File")
+third.add_command(label="Add Existing File")
+
+# make separator 
+third.add_separator()
+third.add_command(label="Show Current File in Project Tool")
+# make separator 
+third.add_separator()
+third.add_command(label="Project Properties...")
+
 root.mainloop()
