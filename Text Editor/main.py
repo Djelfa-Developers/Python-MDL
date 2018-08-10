@@ -1,6 +1,7 @@
 from tkinter import *
 
 root=Tk()
+root.title("Moino")
 menu=Menu(root)
 root.config(menu=menu)
 
@@ -64,5 +65,23 @@ third.add_command(label="Show Current File in Project Tool")
 # make separator 
 third.add_separator()
 third.add_command(label="Project Properties...")
+
+#-------   make last menu   ---------
+last=Menu(menu,tearoff=0)
+menu.add_cascade(label="Help",menu=last)
+last.add_command(label="Moino Manual")
+last.add_command(label="Tutorial")
+
+# make separator 
+last.add_separator()
+last.add_command(label="Python Manual (HTML)...")
+last.add_command(label="Python Website...")
+last.add_command(label="Python Interface to Tcl/Tk")
+last.add_command(label="Python Turtle Graphics")
+# make separator 
+last.add_separator()
+last.add_command(label="Check for Updates...")
+last.add_command(label="About...")
+
 
 root.mainloop()
