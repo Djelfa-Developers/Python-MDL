@@ -1,7 +1,17 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# Said Gourida
+
+
+
 from tkinter import *
 
 root=Tk()
 root.title("Moino")
+#root.resizable(True,True)
+root.state('zoomed')
+
+
 menu=Menu(root)
 root.config(menu=menu)
 
