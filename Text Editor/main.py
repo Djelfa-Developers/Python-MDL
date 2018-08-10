@@ -32,7 +32,7 @@ first.add_command(label="Sava As...",accelerator="Ctrl+Shift+S")
 first.add_separator()
 
 first.add_command(label="Page Setup...")
-first.add_command(label="Quit",accelerator="Ctrl+Q")
+first.add_command(label="Quit",accelerator="Ctrl+Q",command=quit)
 
 #-------   make second menu   ---------
 second=Menu(menu,tearoff=0)
