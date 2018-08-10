@@ -8,19 +8,19 @@ root.config(menu=menu)
 first=Menu(menu,tearoff=0)
 menu.add_cascade(label="File",menu=first)
 first.add_command(label="New")
-first.add_command(label="Open")
+first.add_command(label="Open...")
 first.add_command(label="Close")
 
 #make separator between the labels
 first.add_separator()
 
 first.add_command(label="Sava")
-first.add_command(label="Sava As")
+first.add_command(label="Sava As...")
 
 #make separator between the labels
 first.add_separator()
 
-first.add_command(label="Page Setup")
+first.add_command(label="Page Setup...")
 first.add_command(label="Quit")
 
 #-------   make second menu   ---------
@@ -43,6 +43,6 @@ select_menu.add_command(label="Select More")
 select_menu.add_command(label="Select Less")
 
 second.add_command(label="Search and replace")
-second.add_command(label="Goto Line")
+second.add_command(label="Goto Line...")
 
 root.mainloop()
