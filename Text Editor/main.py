@@ -4,7 +4,15 @@
 
 
 
-from tkinter import *
+import sys
+
+if sys.version_info[0] == 3:  # Just checking your Python version to import Tkinter properly.
+    from tkinter import *
+else:
+    from Tkinter import *
+
+
+
 
 root=Tk()
 root.title("Moino")
