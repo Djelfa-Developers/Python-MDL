@@ -10,7 +10,9 @@ if sys.version_info[0] == 3:  # Just checking your Python version to import Tkin
     from tkinter import *
     from tkinter import messagebox
 else:
-    from Tkinter import *
+    from Tkinter import * # this from python 2 
+    import tkMessageBox # this from python2 when you want to import messagebox 
+
 
 
 
@@ -29,6 +31,8 @@ root.config(menu=menu)
 
 def quit():
     if askokcancel("Quit", "Do you want to quit?"):
+        # this for python2 
+        # tkMessageBox.askokcancel("Quit","Do you want to quit?")
         root.destroy()
 root.protocol(quit)
 
