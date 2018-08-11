@@ -8,8 +8,10 @@ import sys
 
 if sys.version_info[0] == 3:  # Just checking your Python version to import Tkinter properly.
     from tkinter import *
+    from tkinter import messagebox
 else:
     from Tkinter import *
+
 
 
 
@@ -22,6 +24,14 @@ root.state('zoomed')
 
 menu=Menu(root)
 root.config(menu=menu)
+
+#-------   some functions    ---------
+
+def quit():
+    if askokcancel("Quit", "Do you want to quit?"):
+        root.destroy()
+root.protocol(quit)
+
 
 #-------   make first menu   ---------
 first=Menu(menu,tearoff=0)
