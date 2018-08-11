@@ -11,7 +11,7 @@ if sys.version_info[0] == 3:  # Just checking your Python version to import Tkin
     from tkinter import messagebox
 else:
     from Tkinter import * # this from python 2 
-    import tkMessageBox # this from python2 when you want to import messagebox 
+    import tkMessageBox # this for python2 when you want to import messagebox 
 
 
 
