@@ -1,1 +1,19 @@
 
+
+
+
+*font : Arial -12
+*Entry*background : white
+*Listbox*background : white
+*Listbox*exportSelection : 0
+*selectBackground : #a0a
+*selectForeground : white
+*Scrollbar*Width : 14
+*Scrollbar*troughColor : #aaa
+*Scrollbar*takeFocus : 0
+*Checkbutton*selectColor : blue
+*Radiobutton*selectColor : red
+*Menu*tearOff : 0
+*Menu*relief : ridge
+*Menu*borderWidth : 2
+*Button*Width : 14
