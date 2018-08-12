@@ -25,5 +25,5 @@ def about():
     def close():
         root_1.destroy()    
         
-    lb=Button(root_1,text="Close",width=50,foreground="white",borderwidth=2,width=50,bg="#F88C39",command=close).place(x=22,y=100)
+    lb=Button(root_1,text="Close",width=50,foreground="white",borderwidth=2,width=50,bg="#F88C39",command=close).place(x=22,y=350)
 
