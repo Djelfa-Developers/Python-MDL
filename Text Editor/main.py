@@ -5,6 +5,7 @@
 
 
 import sys
+from functions import about
 
 if sys.version_info[0] == 3:  # Just checking your Python version to import Tkinter properly.
     from tkinter import *
@@ -116,7 +117,7 @@ last.add_command(label="Python Turtle Graphics")
 # make separator 
 last.add_separator()
 last.add_command(label="Check for Updates...")
-last.add_command(label="About...")
+last.add_command(label="About...",command=about)
 
 
 root.mainloop()
