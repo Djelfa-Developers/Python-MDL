@@ -25,6 +25,15 @@ def about():
     
     def close():
         root_1.destroy() 
+        
+        
+    myframe=Frame(root_1,bg="#303030",highlightbackground="white",highlightcolor="white",highlightthickness=1).place(height=170,width=320,x=41,y=100)
+    product=Label(myframe,text="Product: ",fg="white",font="none 10 bold",bg="#303030").place(x=131,y=130)
+    version=Label(myframe,text="Version: ",fg="white",font="none 10 bold",bg="#303030").place(x=132,y=150)
+    release=Label(myframe,text="Release Date: ",fg="white",font="none 10 bold",bg="#303030").place(x=96,y=170)
+    owner=Label(myframe,text="Owner: ",fg="white",font="none 10 bold",bg="#303030").place(x=138,y=190)
+    os=Label(myframe,text="OS: ",fg="white",font="none 10 bold",bg="#303030").place(x=161,y=210)
+    gui=Label(myframe,text="GUI Toolkit: ",fg="white",font="none 10 bold",bg="#303030").place(x=110,y=230)
     
     #style=ttk.Style()
     #style.configure("TButton")
