@@ -54,6 +54,12 @@ def about():
     release1.place(x=192,y=172,width=100)
     
     
+    owner1=Text(myframe,fg="white",font="none 10 bold",bg="#303030",borderwidth=0,height=0)
+    owner1.insert(0.0,"Gourida Said")
+    owner1.configure(state="disabled")
+    owner1.place(x=192,y=192,width=100)
+    
+    
     #style=ttk.Style()
     #style.configure("TButton")
     #lb=ttk.Button(root_1,text="Close",command=close).place(x=22,y=350,width=360)
