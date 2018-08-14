@@ -42,6 +42,12 @@ def about():
     product1.place(x=192,y=132,width=100)
     
     
+    version1=Text(myframe,fg="white",font="none 10 bold",bg="#303030",borderwidth=0,height=0)
+    version1.insert(0.0,"1.3.9")
+    version1.configure(state="disabled")
+    version1.place(x=192,y=152,width=100)
+    
+    
     #style=ttk.Style()
     #style.configure("TButton")
     #lb=ttk.Button(root_1,text="Close",command=close).place(x=22,y=350,width=360)
