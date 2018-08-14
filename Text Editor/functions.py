@@ -60,6 +60,24 @@ def about():
     owner1.place(x=192,y=192,width=100)
     
     
+    os1=Text(myframe,fg="white",font="none 9 bold",bg="#303030",borderwidth=0,height=0)
+    os1.configure(state="disabled")
+    os1.place(x=192,y=212,width=167)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     #style=ttk.Style()
     #style.configure("TButton")
     #lb=ttk.Button(root_1,text="Close",command=close).place(x=22,y=350,width=360)
