@@ -65,8 +65,11 @@ def about():
     os1.place(x=192,y=212,width=167)
     
     
-    
-    
+    gui1=Text(myframe,fg="white",font="none 10 bold",bg="#303030",borderwidth=0,height=0)
+    gui1.insert(0.0,"Tkinter Version 8.6")
+    gui1.configure(state="disabled")
+    gui1.place(x=192,y=232,width=120)
+
     
     
     
