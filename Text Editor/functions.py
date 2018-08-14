@@ -4,6 +4,8 @@
 
 
 import sys
+import platform
+
 
 if sys.version_info[0] == 3:  # Just checking your Python version to import Tkinter properly.
     from tkinter import *
@@ -61,6 +63,8 @@ def about():
     
     
     os1=Text(myframe,fg="white",font="none 9 bold",bg="#303030",borderwidth=0,height=0)
+    os_ver=str(platform.platform() + platform.machine())
+    os1.insert(0.0,os_ver)
     os1.configure(state="disabled")
     os1.place(x=192,y=212,width=167)
     
