@@ -35,6 +35,13 @@ def about():
     os=Label(myframe,text="OS: ",fg="white",font="none 10 bold",bg="#303030").place(x=161,y=210)
     gui=Label(myframe,text="GUI Toolkit: ",fg="white",font="none 10 bold",bg="#303030").place(x=110,y=230)
     
+    
+    product1=Text(myframe,fg="white",font="none 10 bold",bg="#303030",borderwidth=0,height=0)
+    product1.insert(0.0,"Moino Editor")
+    product1.configure(state="disabled")
+    product1.place(x=192,y=132,width=100)
+    
+    
     #style=ttk.Style()
     #style.configure("TButton")
     #lb=ttk.Button(root_1,text="Close",command=close).place(x=22,y=350,width=360)
