@@ -48,6 +48,23 @@ def about(event=None):
     version1.configure(state="disabled")
     version1.place(x=192,y=152,width=100)
     
+    release1=Text(root_1,fg="white",font="none 10 bold",bg="#303030",borderwidth=0,height=0,)
+    release1.insert(0.0,"August 31 2018")
+    release1.configure(state="disabled")
+    release1.place(x=192,y=172,width=100)
+    
+    
+    owner1=Text(root_1,fg="white",font="none 10 bold",bg="#303030",borderwidth=0,height=0)
+    owner1.insert(0.0,"Gourida Said")
+    owner1.configure(state="disabled")
+    owner1.place(x=192,y=192,width=100)
+    
+    
+    os1=Text(root_1,fg="white",font="none 9 bold",bg="#303030",borderwidth=0,height=0)
+    os_ver=str(platform.platform() + platform.machine())
+    os1.insert(0.0,os_ver)
+    os1.configure(state="disabled")
+    os1.place(x=192,y=212,width=167)
     
 #------------------ main ----------------------
 root=Tk()
