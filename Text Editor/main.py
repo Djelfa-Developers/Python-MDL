@@ -204,6 +204,20 @@ scr2.config(command=e_text2.yview)
 scr2.pack(side=RIGHT,fill=Y)
 
 
+def b_bar(event=None):
+    
+    txt = ''
+    e_l,e_c= e_text1.index('end-1c').split('.')
+    txt = '\n'.join(map(str, range(1, int(e_l))))
+    l,c=e_text1.index("insert").split('.')
+    bottom_bar.config(text= 'Line: %s | Column: %s' %(l,c))
+
+
+bottom_bar=Label(e_text1, text='Line: 1 | Column: 0')
+bottom_bar.pack(expand=NO, fill=None, side=RIGHT, anchor='se')
+
+
+
 #-------   make first menu   ---------
 first=Menu(menu,tearoff=0)
 menu.add_cascade(label="File",menu=first)
