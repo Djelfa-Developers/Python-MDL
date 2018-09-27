@@ -183,7 +183,25 @@ top_bar.pack(expand=NO,fill=X)
 side_bar=Frame(root,width=35,bg="#593489")
 side_bar.pack(side=LEFT,anchor='nw',fill=Y)
 
+m1=PanedWindow(orient=VERTICAL,borderwidth=1,showhandle=YES,handlesize=3,handlepad=500,background="#593489")
+m1.pack(fill=BOTH,expand=1)
 
+e_text1=Text(m1,wrap=WORD)
+scr1=Scrollbar(e_text1)
+scr1.pack(side=RIGHT,fill=Y)
+e_text1.configure(yscrollcommand=scr1.set)
+e_text1.pack(expand=YES,fill=BOTH)
+scr1.config(command=e_text1.yview)
+m1.add(e_text1)
+
+
+e_text2=Text(m1,wrap=WORD)
+m1.pack(fill=BOTH,expand=1)
+e_text2.pack(expand=YES,fill=BOTH)
+scr2=Scrollbar(e_text2)
+e_text2.configure(yscrollcommand=scr2.set)
+scr2.config(command=e_text2.yview)
+scr2.pack(side=RIGHT,fill=Y)
 
 
 #-------   make first menu   ---------
