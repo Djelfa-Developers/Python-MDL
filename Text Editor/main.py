@@ -80,7 +80,7 @@ def about(event=None):
 
 
     
-def New():
+#def New():
 
 
 def open_file():
@@ -96,9 +96,9 @@ def open_file():
         e_text1.insert(1.0,fh.read())
         fh.close()
 
-def close():
+#def close():
     
-def Setup():
+#def Setup():
 
 def save():
     global filename
