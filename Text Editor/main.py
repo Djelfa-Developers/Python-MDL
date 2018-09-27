@@ -121,6 +121,17 @@ def save_as():
     except:
         pass
 
+def select_all(event=None):
+    e_text1.tag_add("sel", "1.0", "end-1c")
+    e_text1.mark_set("insert", "1.0")
+    e_text1.see("insert")
+    return "break"
+
+def remove_selection(event=None):
+    e_text1.tag_remove("sel", "1.0", "end")
+    e_text1.see("insert")
+    return "break"    
+    
 def cut():
     e_text1.event_generate("<<Cut>>")
     return "break"
