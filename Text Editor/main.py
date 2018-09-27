@@ -175,6 +175,17 @@ def quit():
 root.protocol(quit)
 
 
+
+top_bar=Frame(root,height=27, bg="#593489")
+top_bar.pack(expand=NO,fill=X)
+
+
+side_bar=Frame(root,width=35,bg="#593489")
+side_bar.pack(side=LEFT,anchor='nw',fill=Y)
+
+
+
+
 #-------   make first menu   ---------
 first=Menu(menu,tearoff=0)
 menu.add_cascade(label="File",menu=first)
