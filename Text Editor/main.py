@@ -28,6 +28,27 @@ def about(event=None):
     def close():
         root_1.destroy()   
         
+    #myframe=Frame(root_1,bg="#303030",highlightbackground="white",highlightcolor="white",highlightthickness=1).place(height=170,width=320,x=41,y=100)
+    product=Label(root_1,text="Product: ",fg="white",font="none 10 bold",bg="#593489").place(x=127,y=132)
+    version=Label(root_1,text="Version: ",fg="white",font="none 10 bold",bg="#593489").place(x=130,y=151)
+    release=Label(root_1,text="Release Date: ",fg="white",font="none 10 bold",bg="#593489").place(x=93,y=172)
+    owner=Label(root_1,text="Owner: ",fg="white",font="none 10 bold",bg="#593489").place(x=137,y=191)
+    os=Label(root_1,text="OS: ",fg="white",font="none 10 bold",bg="#593489").place(x=162,y=211)
+    gui=Label(root_1,text="GUI Toolkit: ",fg="white",font="none 10 bold",bg="#593489").place(x=107,y=232)
+    
+    
+    product1=Text(root_1,fg="white",font="none 10 bold",bg="#303030",borderwidth=0,height=0)
+    product1.insert(0.0,"Moino Editor")
+    product1.configure(state="disabled")
+    product1.place(x=192,y=132,width=100)
+    
+    
+    version1=Text(root_1,fg="white",font="none 10 bold",bg="#303030",borderwidth=0,height=0)
+    version1.insert(0.0,"1.3.9")
+    version1.configure(state="disabled")
+    version1.place(x=192,y=152,width=100)
+    
+    
 #------------------ main ----------------------
 root=Tk()
 root.title("Moino")
