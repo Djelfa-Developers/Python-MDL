@@ -66,6 +66,19 @@ def about(event=None):
     os1.configure(state="disabled")
     os1.place(x=192,y=212,width=167)
     
+    gui1=Text(root_1,fg="white",font="none 10 bold",bg="#303030",borderwidth=0,height=0)
+    gui1.insert(0.0,"Tkinter Version 8.6")
+    gui1.configure(state="disabled")
+    gui1.place(x=192,y=232,width=120)
+
+    
+    
+    #style=ttk.Style()
+    #style.configure("TButton")
+    #lb=ttk.Button(root_1,text="Close",command=close).place(x=22,y=350,width=360)
+    lb=Button(root_1,text="Close",width=40,foreground="white",borderwidth=2,bg="#F88C39",command=close).place(x=25,y=350)
+
+    
 #------------------ main ----------------------
 root=Tk()
 root.title("Moino")
