@@ -98,6 +98,18 @@ def open_file():
 
 def close():
     
+def Setup():
+
+def save():
+    global filename
+    try:
+        f = open(filename, 'w')
+        letter = e_text1.get(1.0, 'end')
+        f.write(letter)
+        f.close()
+    except:
+        save_as()
+    
 #------------------ main ----------------------
 root=Tk()
 root.title("Moino")
