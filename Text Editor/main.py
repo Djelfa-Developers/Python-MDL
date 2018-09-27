@@ -242,6 +242,8 @@ ms.add_command(label="Clear",compound=LEFT,command=clear)
 ms.add_separator()
 ms.add_command(label='Select All', underline=7,command=select_all)
 
+bottom_bar=Frame(root,height=20,width=100,bg="#593489")
+bottom_bar.pack(fill=X,side=BOTTOM)
 
 #-------   make first menu   ---------
 first=Menu(menu,tearoff=0)
