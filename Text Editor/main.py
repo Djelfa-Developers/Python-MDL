@@ -233,7 +233,14 @@ e_text1.bind("<Button-3>", popup)
 e_text1.bind("<Any-KeyPress>",b_bar)
 m1.add(e_text2)
 
-
+# mouse menu
+ms=Menu(e_text1)
+ms.add_command(label="Cut", compound=LEFT,command=cut)
+ms.add_command(label="Copy",compound=LEFT,command=copy)
+ms.add_command(label="Paste",compound=LEFT,command=paste)
+ms.add_command(label="Clear",compound=LEFT,command=clear)
+ms.add_separator()
+ms.add_command(label='Select All', underline=7,command=select_all)
 
 
 #-------   make first menu   ---------
