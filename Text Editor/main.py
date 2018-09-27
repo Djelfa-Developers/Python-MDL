@@ -218,6 +218,24 @@ bottom_bar.pack(expand=NO, fill=None, side=RIGHT, anchor='se')
 
 
 
+# e_text1.bind('<Control-N>', New)
+# e_text1.bind('<Control-n>', New)
+e_text1.bind('<Control-O>', open_file)
+e_text1.bind('<Control-o>', open_file)
+e_text1.bind('<Control-S>', save)
+e_text1.bind('<Control-s>', save)
+e_text1.bind('<Control-A>', select_all)
+e_text1.bind('<Control-a>', select_all)
+# e_text1.bind('<Control-f>', on_find)
+# e_text1.bind('<Control-F>', on_find)
+e_text1.bind('<KeyPress-F1>',about)
+e_text1.bind("<Button-3>", popup)
+e_text1.bind("<Any-KeyPress>",b_bar)
+m1.add(e_text2)
+
+
+
+
 #-------   make first menu   ---------
 first=Menu(menu,tearoff=0)
 menu.add_cascade(label="File",menu=first)
