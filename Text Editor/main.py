@@ -5,7 +5,7 @@
 
 
 import sys
-from functions import about
+#from functions import about
 
 if sys.version_info[0] == 3:  # Just checking your Python version to import Tkinter properly.
     from tkinter import *
