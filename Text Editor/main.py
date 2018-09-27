@@ -109,6 +109,18 @@ def save():
         f.close()
     except:
         save_as()
+        
+def save_as():
+    try:
+        f = tkFileDialog.asksaveasfilename(initialfile ='Untitled.txt', defaultextension=".txt",filetypes=[("AllFiles","*.*"),("Text Documents","*.txt")])
+        fh = open(f, 'w')
+        textoutput = e_text1.get(1.0, END)
+        fh.write(textoutput)
+        fh.close()
+        root.title(os.path.basename(f) + " - pyPad")
+    except:
+        pass
+
     
 #------------------ main ----------------------
 root=Tk()
