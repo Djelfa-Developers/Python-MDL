@@ -121,7 +121,23 @@ def save_as():
     except:
         pass
 
-    
+def cut():
+    e_text1.event_generate("<<Cut>>")
+    return "break"
+
+def copy():
+    if not e_text1.tag_ranges("sel"):
+        # There is no selection, so do nothing and maybe interrupt.
+        return None
+    e_text1.event_generate("<<Copy>>")
+    return "break"
+
+def paste():
+    e_text1.event_generate("<<Paste>>")
+    e_text1.see("insert")
+    return "break"
+
+
 #------------------ main ----------------------
 root=Tk()
 root.title("Moino")
