@@ -78,6 +78,25 @@ def about(event=None):
     #lb=ttk.Button(root_1,text="Close",command=close).place(x=22,y=350,width=360)
     lb=Button(root_1,text="Close",width=40,foreground="white",borderwidth=2,bg="#F88C39",command=close).place(x=25,y=350)
 
+
+    
+def New():
+
+
+def open_file():
+    global filename
+    filename=tkFileDialog.askopenfilename(defaultextension=".txt",filetypes =[("All Files","*.*"),("Text Documents","*.txt")])
+    if filename == "": # If no file chosen.
+        filename = None # Absence of file.
+    else:
+        root.title(os.path.basename(filename) + " - pyPad") #
+        #Returning the basename of 'file'
+        e_text1.delete(1.0,END)
+        fh = open(filename,"r")
+        e_text1.insert(1.0,fh.read())
+        fh.close()
+
+def close():
     
 #------------------ main ----------------------
 root=Tk()
