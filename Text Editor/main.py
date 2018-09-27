@@ -148,6 +148,12 @@ def paste():
     e_text1.see("insert")
     return "break"
 
+def clear():
+    e_text1.event_generate("<<Clear>>")
+
+def popup(event):
+    ms.tk_popup(event.x_root, event.y_root,0)
+
 
 #------------------ main ----------------------
 root=Tk()
