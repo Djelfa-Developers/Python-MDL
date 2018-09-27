@@ -16,9 +16,19 @@ else:
 
 
 
-
-
-
+def about(event=None):
+    
+    root_1 =Tk()
+    #root.withdraw()
+    root_1.title("Moino Abont")
+    root_1.resizable(False,False)
+    root_1.geometry("400x400+400+170")
+    root_1.config(background="#593489")
+    
+    def close():
+        root_1.destroy()   
+        
+#------------------ main ----------------------
 root=Tk()
 root.title("Moino")
 #root.resizable(True,True)
