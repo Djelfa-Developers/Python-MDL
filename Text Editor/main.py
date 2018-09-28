@@ -157,7 +157,9 @@ def popup(event):
     ms.tk_popup(event.x_root, event.y_root,0)
 
 
+    
 #------------------ main ----------------------
+
 root=Tk()
 root.title("Moino")
 #root.resizable(True,True)
@@ -177,7 +179,7 @@ def quit():
 root.protocol(quit)
 
 
-
+#this bar for icons 
 top_bar=Frame(root,height=27, bg="#593489")
 top_bar.pack(expand=NO,fill=X)
 
@@ -197,13 +199,13 @@ scr1.config(command=e_text1.yview)
 m1.add(e_text1)
 
 
-e_text2=Text(m1,wrap=WORD)
-m1.pack(fill=BOTH,expand=1)
-e_text2.pack(expand=YES,fill=BOTH)
-scr2=Scrollbar(e_text2)
-e_text2.configure(yscrollcommand=scr2.set)
-scr2.config(command=e_text2.yview)
-scr2.pack(side=RIGHT,fill=Y)
+#e_text2=Text(m1,wrap=WORD)
+#m1.pack(fill=BOTH,expand=1)
+#e_text2.pack(expand=YES,fill=BOTH)
+#scr2=Scrollbar(e_text2)
+#e_text2.configure(yscrollcommand=scr2.set)
+#scr2.config(command=e_text2.yview)
+#scr2.pack(side=RIGHT,fill=Y)
 
 
 def b_bar(event=None):
