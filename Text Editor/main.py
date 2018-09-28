@@ -209,7 +209,7 @@ m1.add(e_text1)
 
 
 def b_bar(event=None):
-    
+    #this func for track changes in number of lines
     txt = ''
     e_l,e_c= e_text1.index('end-1c').split('.')
     txt = '\n'.join(map(str, range(1, int(e_l))))
@@ -221,7 +221,7 @@ bottom_bar=Label(e_text1, text='Line: 1 | Column: 0')
 bottom_bar.pack(expand=NO, fill=None, side=RIGHT, anchor='se')
 
 
-
+#track key press 
 # e_text1.bind('<Control-N>', New)
 # e_text1.bind('<Control-n>', New)
 e_text1.bind('<Control-O>', open_file)
@@ -246,6 +246,7 @@ ms.add_command(label="Clear",compound=LEFT,command=clear)
 ms.add_separator()
 ms.add_command(label='Select All', underline=7,command=select_all)
 
+#bottom bar 
 bottom_bar=Frame(root,height=20,width=100,bg="#593489")
 bottom_bar.pack(fill=X,side=BOTTOM)
 
