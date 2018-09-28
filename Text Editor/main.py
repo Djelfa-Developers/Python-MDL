@@ -120,13 +120,15 @@ def save_as():
         root.title(os.path.basename(f) + " - pyPad")
     except:
         pass
-
+    
+# select all text in the editor
 def select_all(event=None):
     e_text1.tag_add("sel", "1.0", "end-1c")
     e_text1.mark_set("insert", "1.0")
     e_text1.see("insert")
     return "break"
 
+# remove selection text in the editor
 def remove_selection(event=None):
     e_text1.tag_remove("sel", "1.0", "end")
     e_text1.see("insert")
